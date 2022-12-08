@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -10,7 +10,7 @@ import themeReducer from "./features/theme";
 
 const store = configureStore({
   reducer: {
-    user: userReducer,
+    users: userReducer,
     theme: themeReducer,
   },
 });

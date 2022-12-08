@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { login, logout } from "../features/user";
 
 const Login = () => {
-  const user = useSelector((state) => state.user.value);
+  const user = useSelector((state) => state.users.value);
   const dispatch = useDispatch();
   return (
     <div>
